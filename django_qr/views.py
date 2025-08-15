@@ -3,7 +3,9 @@ import qrcode
 from . forms import QRCodeForm
 import os
 from django.conf import settings
+from django.views.decorators.csrf import csrf_exempt
 
+@csrf_exempt
 def gen_qr(request):
     if request.method == 'POST':
         form = QRCodeForm(request.POST)
@@ -34,4 +36,5 @@ def gen_qr(request):
         context={
             'form':form
         }
+
         return render(request,'gen_qr.html',context)
