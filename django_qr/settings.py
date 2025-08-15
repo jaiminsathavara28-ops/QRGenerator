@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=xzp*t@7vikv)h(zlac#@xn^-s@+!vbvtdg$2hzzb9h%-1ecr1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = Trur
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -132,6 +132,7 @@ MEDIA_URL = '/qr_code/media/'
 SESSION_COOKIE = True
 CSRF_TOKEN = True
 SECURE_SSL_REDIRECT = False
+
 
 
 
