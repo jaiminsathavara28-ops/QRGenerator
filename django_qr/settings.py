@@ -131,6 +131,7 @@ MEDIA_URL = '/media/'
 #HTTPS settings
 SESSION_COOKIE = True
 CSRF_TOKEN = True
-SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = False
+
 
 
